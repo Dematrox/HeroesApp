@@ -21,7 +21,7 @@ export const HeroPage = () => {
     return  <Navigate to="/search"/>
   }
 
-  const heroImgUrl = `/assets/heroes/${hero.id}.jpg`
+  const heroImgUrl = `/src/assets/heroes/${hero.id}.jpg`
 
   return (
     <>
