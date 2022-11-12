@@ -16,8 +16,8 @@ export const HeroPage = () => {
     //Logica para ir para atras en el historial
     navigate(-1);
   }
-  // const heroImageUrl = `./fotos/heroes/${id}.jpg`;
-  const heroImgUrl = `./fotos/heroes/${hero.id}.jpg`
+  const heroImageUrl = `./fotos/heroes/${id}.jpg`;
+  // const heroImgUrl = `./fotos/heroes/${hero.id}.jpg`
 
   if(!hero){
     return  <Navigate to="/search"/>
@@ -30,7 +30,7 @@ export const HeroPage = () => {
             <div className="mt-5">
                 <div className="row no-gutters">
                     <div className="col-4">
-                        <img src={heroImgUrl} className="card-img" alt={hero.superhero}/>
+                        <img src={heroImageUrl} className="card-img" alt={hero.superhero}/>
                     </div>
                     <div className="col-8 mt-5">
                         <div className="card-body ms-4">
