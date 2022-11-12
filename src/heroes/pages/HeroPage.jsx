@@ -16,12 +16,13 @@ export const HeroPage = () => {
     //Logica para ir para atras en el historial
     navigate(-1);
   }
+  // const heroImageUrl = `./fotos/heroes/${id}.jpg`;
+  const heroImgUrl = `./fotos/heroes/${hero.id}.jpg`
 
   if(!hero){
     return  <Navigate to="/search"/>
   }
 
-  const heroImgUrl = `/src/assets/heroes/${hero.id}.jpg`
 
   return (
     <>
